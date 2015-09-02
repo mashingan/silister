@@ -11,7 +11,7 @@ void println(T...)(T args) {
 void main() {
     writeln("ok setting up ENV");
     setupEnvironment();
-    eval(read(`(load "stdlib.lisp")`));
+    eval(read(`(load "src/stdlib.lisp")`));
     const auto QUIT = read("QUIT");
     while(1) {
         write(">> ");
